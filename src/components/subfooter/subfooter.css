@@ -1,0 +1,11 @@
+.congrats-msg h2 {
+    text-transform: capitalize;
+}
+
+@media screen and (min-width: 319px) and (max-width: 770px) {
+    .congrats-msg {
+        border: 1px solid red; 
+        margin-left: -15vw;
+        box-sizing: border-box;   
+    }
+}

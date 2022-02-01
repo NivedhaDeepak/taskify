@@ -1,0 +1,147 @@
+.form {
+    width: 40vw;
+    margin-left: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form input {
+    outline: none;
+    width: 80%;
+    border-radius: 3px;
+    padding: 0.1rem 0.3rem;
+    /* border: 1px solid gray; */
+    border: 1px solid rgba(128, 128, 128, 0.568);
+    height: 4vh;
+    font-weight: bold;
+    letter-spacing: 0.03rem;
+}
+
+.form-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 32.7vw;
+}
+
+.form button {
+    background: blueviolet;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    color: white;
+    font-weight: 500;
+    padding: 0.3rem 0.7rem;
+    width: 7.3;
+    height: 4.6vh;
+}
+
+.form select {
+    outline: none;
+    border-radius: 3px;
+    padding: 0.4rem 0.51rem 0.2rem 0.51rem;
+    border: 1px solid rgba(128, 128, 128, 0.568);
+    font-weight: bolder;
+    height: 4.6vh;
+    width: 40vw;
+} 
+
+.form option {
+    font-weight: bolder;   
+}
+
+.form .date {
+    width: 10vw;
+}
+
+.date-and-create {
+    display: flex;
+    flex-direction: row;
+}
+
+/* @media screen and (max-width: 450px) {
+    .form {
+        all: unset;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 95vw;
+        margin-left: 0;
+    }
+
+    .form input {
+        min-width: 55%;
+        margin-left: 0;
+    }
+    .form select {
+        min-width: 40%;
+        height: 4.8vh;
+    }
+    .form button {
+        min-width: 25%;
+        
+    }
+  } */
+
+   /* @media screen and (min-width: 320px) {  */
+    @media screen and (min-width:319px) and (max-width: 770px){ 
+    .form {
+        width: 95vw;
+        margin-left: 0%;
+    }
+
+    .form input {
+        width: 95vw;
+    }
+    .form-options {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .form-options select {
+        width: 95vw;
+        padding-left: 0;
+    }
+
+    .form-options .date {
+        width: 40vw;
+    }
+
+    .form button {
+        width: 30vw;
+    }
+
+    .date-and-create {
+        display: flex;
+        flex-direction: row;
+        width: 95vw;
+    }
+
+    .date-and-create .date, .date-and-create button {
+        width: 51vw;
+    }
+
+  }
+
+  @media screen and (min-width:1020px) and (max-width: 1050px) {
+    .form-options {
+        width: 30vw;
+    }
+    .form select {
+        width: 14vw;
+        padding: unset;
+    }
+    .form .date {
+        width: 13vw;
+    }
+    .form input {
+        width: unset;
+        width: 34.4vw;
+    }
+  }
